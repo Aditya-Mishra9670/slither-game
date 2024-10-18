@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgb(239, 239, 61),rgb(207, 76, 76));
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playarea {
+    background: linear-gradient(rgb(32, 213, 32), rgb(218, 218, 53));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adds depth to the play area */
+}
+
+.snake {
+    background: linear-gradient(135deg, rgba(128, 0, 128, 1), rgba(85, 0, 170, 1));
+    border-radius: 50%; /* Makes the snake segments round */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
+}
+
+.food {
+    background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 165, 0, 1) 80%);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow to give depth */
+}
+
+.head {
+    background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(170, 0, 0, 1));
+    border-radius: 50%; /* Snake's head is rounder */
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4); /* A larger shadow for the head */
+}
+
+#scorebox {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Makes the score more visible */
+}
+
+#Highscore {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#programmer{
+    font:bold;
+    font-size: large;
+    font-weight: bold;
+}
+
